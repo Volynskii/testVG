@@ -1,0 +1,15 @@
+.divider {
+  background: #fff;
+  display: block;
+  height: 3px;
+  width: calc(58.33333% - 20px);
+  position: relative;
+}
+
+.dividerFull {
+  background: #fff;
+  display: block;
+  height: 3px;
+  width: 100%;
+  position: relative;
+}

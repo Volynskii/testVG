@@ -1,0 +1,52 @@
+.content {
+  position: relative;
+  margin: 0 10px;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  z-index: 1;
+  box-shadow: 0 .25rem 2.75rem rgba(0, 0, 0, .25);
+}
+
+.list {
+  position: relative;
+  width: 100%;
+  height: auto;
+  transition-property: transform;
+  display: flex;
+}
+
+.item {
+  flex-shrink: 0;
+  position: relative;
+  width: 100%;
+  height: auto;
+  transition-property: transform;
+}
+
+.preview {
+
+}
+
+.picture {
+
+}
+
+.link {
+  display: block;
+  position: relative;
+  padding-bottom: 56.25%;
+
+  img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+}

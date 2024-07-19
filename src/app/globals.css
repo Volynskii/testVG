@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'VestiSans-Regular';
+  src: local('RF Dewi'), url(fonts/VestiSans/VestiSans-Regular.ttf) format('truetype');
+  font-weight: 400;
+}
+
+/*@font-face {*/
+/*  font-family: 'RF Dewi';*/
+/*  src: local('RF Dewi'), url(fonts/VestiSans/) format('truetype');*/
+/*  font-weight: 600;*/
+/*}*/
+
+@font-face {
+  font-family: 'RF Dewi';
+  src: local('RF Dewi'), url(fonts/VestiSans/VestiSans-Bold.ttf) format('truetype');
+  font-weight: bold;
+}
+
+
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -86,13 +106,18 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: white;
+  /*color: rgb(var(--foreground-rgb));*/
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+footer {
+  color: black;
 }
 
 a {
@@ -105,3 +130,46 @@ a {
     color-scheme: dark;
   }
 }
+
+header {
+  color: white;
+}
+
+main {
+  color: white;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+html {
+  font-size: 20px;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+
+

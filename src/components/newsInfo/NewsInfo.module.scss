@@ -1,0 +1,22 @@
+.info {
+  padding: 3rem 0;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.date {
+  box-sizing: border-box;
+  margin: .5rem 0 auto 8.3333333333%;
+  padding: 0 10px;
+  width: 25%;
+  font: .6875rem / 1 VestiSans-Regular, sans-serif;
+}
+
+.title {
+  box-sizing: border-box;
+  width: 41.6666666667%;
+  margin: 0 0 auto;
+  padding: 0 10px;
+  font: 1.5rem / 1.5 VestiSans-Regular, sans-serif;
+}
+
