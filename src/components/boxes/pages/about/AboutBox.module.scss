@@ -1,0 +1,15 @@
+.aboutBox {
+  li:before {
+    content: "- ";
+  }
+
+  ul {
+    margin: 0 0 .75rem;
+    padding: 0 10px;
+    list-style: none;
+  }
+
+  li {
+    font: 1rem / 1.5rem VestiSans-Light, sans-serif;
+  }
+}

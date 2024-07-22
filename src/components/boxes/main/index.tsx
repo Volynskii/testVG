@@ -4,9 +4,9 @@ import styles from './MainBox.module.scss';
 const MainBox = ({children}) => {
     return (
         <>
-            <section className={styles.holder}>
+            <main className={styles.holder}>
                 {children}
-            </section>
+            </main>
         </>
     );
 };

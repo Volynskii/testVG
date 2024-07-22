@@ -1,6 +1,12 @@
 @font-face {
   font-family: 'VestiSans-Regular';
-  src: local('RF Dewi'), url(fonts/VestiSans/VestiSans-Regular.ttf) format('truetype');
+  src: local('VestiSans-Regular'), url(fonts/VestiSans/VestiSans-Regular.ttf) format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'VestiSans-Light';
+  src: local('VestiSans-Light'), url(fonts/VestiSans/VestiSans-Light.ttf) format('truetype');
   font-weight: 400;
 }
 
@@ -114,6 +120,12 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+
+
+  /*box-sizing: border-box;*/
+  /*max-width: 1300px;*/
+  /*margin: 0 auto;*/
+  /*padding: 0 10px;*/
 }
 
 footer {
@@ -173,3 +185,18 @@ html {
 
 
 
+h1,h2,h3,h4,h5,h6 {
+  font: 100% VestiSans-Regular, sans-serif;
+  font-weight: 400;
+}
+
+
+p {
+  font: 1rem / 1.5rem VestiSans-Light, sans-serif;
+  margin: 0 0 .75rem;
+  padding: 0 10px;
+}
+
+/*li:before {*/
+/*  content: "- ";*/
+/*}*/

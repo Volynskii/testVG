@@ -1,0 +1,28 @@
+
+.title {
+  width: 40%;
+  margin: 0 auto 0 30%;
+}
+
+.link {
+  font: 700 2.4375rem / 1.1 VestiSans-Regular, sans-serif;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 10px;
+
+  &:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: .4rem;
+    left: -25%;
+    transform: translate(10px, 25%);
+    background: transparent url("/images/icons/icon-back-white.svg") 50% no-repeat;
+    background-size: cover;
+  }
+}

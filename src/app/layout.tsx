@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Background from "@/components/background";
-import MainBox from "@/components/boxes/main";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import MainBox from "@/components/boxes/main";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,9 +24,11 @@ export default function RootLayout({
     <html lang="ru" suppressHydrationWarning={true}>
       <body className={inter.className}>
       <Background/>
-      <MainBox>
       <Header/>
+      <MainBox>
       {children}
+      </MainBox>
+      <MainBox>
       <Footer/>
       </MainBox>
       </body>

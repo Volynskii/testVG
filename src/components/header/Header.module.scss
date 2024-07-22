@@ -1,16 +1,26 @@
 .header {
  font-size: 12.5px;
+ font-family: VestiSans-Regular, sans-serif;
+
 }
 
 .wrapper {
  display: flex;
  justify-content: space-between;
  align-items: center;
+ box-sizing: border-box;
+ max-width: 1300px;
+ margin: 0 auto;
+ padding: 0 10px;
 }
 
 .languageSwitcher {
  display: flex;
  gap: 10px;
+ box-sizing: border-box;
+ margin: auto 0;
+ padding: 0 10px;
+ width: 16.6666666667%;
 }
 
 .languageSwitcher li {

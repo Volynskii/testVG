@@ -12,30 +12,30 @@ const Footer = () => {
                 <div className={styles.content}>
 
                     <div className={styles.channelsList}>
-                        {[1,2,3,4,5].map(()=> (
-                            <div className={styles.item}>
+                        {[1,2,3,4,5].map((item, index)=> (
+                            <div key={index} className={styles.item}>
                                 <div className={styles.link}>
-                                    <Image src={logo}/>
+                                    <Image src={logo} alt={'picture'}/>
                                 </div>
                             </div>
                         ))}
                     </div>
 
                     <div className={styles.channelsList}>
-                        {[1,2,3,4,5].map(()=> (
-                            <div className={styles.item}>
+                        {[1,2,3,4,5].map((item,index)=> (
+                            <div key={index} className={styles.item}>
                                 <div className={styles.link}>
-                                    <Image src={logo}/>
+                                    <Image src={logo} alt={'picture'}/>
                                 </div>
                             </div>
                         ))}
                     </div>
 
                     <div className={styles.channelsList}>
-                        {[1,2].map(()=> (
-                            <div className={styles.item}>
+                        {[1,2].map((item,index)=> (
+                            <div key={index} className={styles.item}>
                                 <div className={styles.link}>
-                                    <Image src={logo}/>
+                                    <Image src={logo} alt={'picture'}/>
                                 </div>
                             </div>
                         ))}
