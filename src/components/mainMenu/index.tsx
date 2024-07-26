@@ -5,16 +5,12 @@ import Link from "next/link";
 
 const MainMenu = ({size}) => {
 
-    console.log('size!', size)
-
     const SIZES = {
         SMALL: styleSmall,
         BIG: styleBig
     }
 
     const styles = SIZES[size];
-
-    console.log('styles!', styles)
 
     return (
        <>

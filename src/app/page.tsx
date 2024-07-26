@@ -7,15 +7,17 @@ import Button from "@/components/button";
 import InfoHeader from "@/components/infoHeader";
 import Promo from "@/components/promo";
 import MainBox from "@/components/boxes/main";
+import Info from "@/app/lists/info";
+import {infoData} from "@/mocks/home/info";
+import React from "react";
 
 export default function Home() {
+
     return (
         <>
-            {/*<MainBox>*/}
             {/* Раздел с большим меню */}
             <SectionBox>
                 <MainMenu size={'BIG'}/>
-
 
             {/* Разделитель */}
             <DividerBox>
@@ -32,12 +34,10 @@ export default function Home() {
 
             {/* Пресс-центр с заголовком и новостями */}
             <SectionBox>
-                <InfoHeader text={"ПРЕСС-ЦЕНТР"}/>
-                <NewsInfo/>
-                <NewsInfo/>
-                <Button text={'Показать больше'}/>
+            <Info data={infoData}>
+                <InfoHeader text={infoData.title}/>
+            </Info>
             </SectionBox>
-            {/*</MainBox>*/}
         </>
     );
 }

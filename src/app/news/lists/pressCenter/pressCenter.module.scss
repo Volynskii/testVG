@@ -1,0 +1,71 @@
+.background {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: calc(100% - 40px);
+  height: 100%;
+  background: #0602ff;
+  box-shadow: 0 1rem 2.2rem rgba(0, 0, 0, .5);
+  z-index: 1;
+}
+
+.body {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 3rem 0;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: calc(16.66667% - 20px);
+    height: 100%;
+    background: transparent url(https://cdn-st1.smotrim.ru/vh/pictures/vhdr/296/722/4.jpg) 50% no-repeat;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: calc(16.66667% - 20px);
+    height: 100%;
+    background: rgba(6, 2, 255, .3455);
+    z-index: 2;
+  }
+
+  div {
+    box-sizing: border-box;
+    width: 25%;
+    padding: 0 10px;
+
+    &:first-child {
+      margin: 0 0 0 8.3333333333%;
+    }
+
+
+    h2 {
+      font: .875rem / 1.5 VestiSans-Regular, sans-serif;
+      color: #fff;
+      margin: 0 0 2rem;
+      width: 83.3333333333%;
+    }
+    p {
+      font: .75rem / 1.6 VestiSans-Light, sans-serif;
+      color: #fff;
+      margin: 0 0 1.5rem;
+      width: 83.3333333333%;
+      padding: 0;
+    }
+    a {
+      text-decoration: underline;
+    }
+  }
+}

@@ -23,6 +23,22 @@
  width: 16.6666666667%;
 }
 
+.navigation {
+ box-sizing: border-box;
+ margin: auto 0;
+ padding: 0 10px;
+ width: 33.3333333333%;
+}
+
+.buttonBurger {
+ color: #fff;
+ background: transparent url("/images/icons/icon-burger-white.svg") 0 no-repeat;
+ background-size: auto 100%;
+ font: .625rem / 1rem VestiSans-Regular, sans-serif;
+ padding: 0 0 0 1.5rem;
+
+}
+
 .languageSwitcher li {
  position: relative;
 }

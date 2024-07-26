@@ -10,6 +10,9 @@
   background: #fff;
   display: block;
   height: 3px;
-  width: 100%;
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  margin-right: 10px;
   position: relative;
+  box-sizing: border-box;
 }

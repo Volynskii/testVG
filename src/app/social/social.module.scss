@@ -1,0 +1,64 @@
+.list {
+  position: relative;
+  margin: 4.5rem 0;
+
+  &.vk {
+    &:before {
+      background: transparent url("/images/icons/icon-vkontakte-blue.svg") 50% no-repeat;
+      //background: transparent url(/i/icon-vkontakte-blue.svg?7171b3e…) 50% no-repeat;
+      background-size: cover;
+      content: "";
+      display: block;
+      height: 48px;
+      width: 48px;
+      border-radius: 100%;
+      margin: 0 0 1rem 10px;
+    }
+  }
+
+  p {
+    font: 12rem / 10.5rem VestiSans-Bold, sans-serif;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    color: #ebebeb;
+    padding: 0;
+    z-index: 1;
+    white-space: nowrap;
+    margin: 0;
+  }
+
+  ul {
+    height: 12rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    margin: 0 0 .75rem;
+    &:before {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 10%;
+    }
+  }
+
+  li {
+    box-sizing: border-box;
+    padding: 0 10px;
+    width: 30%;
+    margin: 0 auto 0 0;
+  }
+
+  a {
+    font: .875rem / 1.5rem VestiSans-Regular, sans-serif;
+    //color: #000;
+    text-decoration: none;
+    color:white;
+  }
+
+}

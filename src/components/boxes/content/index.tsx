@@ -1,6 +1,6 @@
 import styles from './content.module.scss';
 
-const Content = ({children}) => {
+const ContentBox = ({children}) => {
     return (
         <div className={styles.content}>
             {children}
@@ -8,4 +8,4 @@ const Content = ({children}) => {
     );
 };
 
-export default Content;
+export default ContentBox;

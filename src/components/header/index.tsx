@@ -14,6 +14,10 @@ const Header = () => {
                 <li><span>ENG</span></li>
             </ul>
 
+            <div className={styles.navigation}>
+                <button className={styles.buttonBurger}>Меню</button>
+            </div>
+
 
              <Image src={logo}/>
 
