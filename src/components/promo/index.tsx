@@ -13,7 +13,7 @@ const Promo = () => {
                            <div className={styles.preview}>
                                <div className={styles.picture}>
                                    <div className={styles.link}>
-                                       <Image sty src={'https://cdnapi.smotrim.ru/api/v1/pictures/5067058/hd/redirect'}
+                                       <Image src={'https://cdnapi.smotrim.ru/api/v1/pictures/5067058/hd/redirect'}
                                               width={1260} height={708} alt={'picture'}
                                        />
                                    </div>

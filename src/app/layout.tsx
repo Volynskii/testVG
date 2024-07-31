@@ -21,8 +21,8 @@ export default function RootLayout({
 
 
   return (
-    <html lang="ru" suppressHydrationWarning={true}>
-      <body className={inter.className}>
+    <html lang="ru">
+      <body className={inter.className} suppressHydrationWarning={true}>
       <Background/>
       <Header/>
       <MainBox>
