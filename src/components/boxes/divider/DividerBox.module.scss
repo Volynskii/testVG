@@ -1,4 +1,6 @@
 .holder {
-  margin: 0 0 75px 0;
-  padding: 0 10px;
+  margin: 0 0 calc(75px - 3px) 0;
+  box-sizing: border-box;
+  position: relative;
+  left: 10px;
 }

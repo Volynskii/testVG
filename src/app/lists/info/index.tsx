@@ -3,9 +3,10 @@
 import { useState } from "react";
 import NewsInfo from "@/components/newsInfo";
 import ButtonLink from "@/components/buttons/buttonLink";
+import ButtonBox from "@/components/boxes/button";
 
 const Info = ({ data, children, href }) => {
-    console.log('href!', href)
+
     const { info } = data;
     const NEWS_LIMIT = 2;
     const NEWS_LIMIT_INCREMENTOR = 2;
@@ -30,7 +31,9 @@ const Info = ({ data, children, href }) => {
                     isLast={index === infoList.length - 1}
                 />
             ))}
+            <ButtonBox>
             <ButtonLink text="Показать больше" href={href}/>
+            </ButtonBox>
             {/*<Button text="Показать больше" onClick={handleShowMore} />*/}
         </>
     );

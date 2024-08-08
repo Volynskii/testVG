@@ -69,7 +69,7 @@ export const mainMenuBigDData: MenuItem[] = [
                 href: '/smotrim'
             },
             {
-                name: 'вести',
+                name: 'вести.ru',
                 href: '/vesti'
             }
         ]

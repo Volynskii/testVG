@@ -15,7 +15,7 @@ export const mainMenuSmallDData: MenuItem[] = [
                 href: '/about'
             },
             {
-                name: 'пресс центр',
+                name: 'пресс-центр',
                 href: '/news'
             },
             {

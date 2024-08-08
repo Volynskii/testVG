@@ -1,19 +1,19 @@
 .button {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-
   box-sizing: border-box;
-  width: calc(25%);
-  margin: 3rem auto 0 33.3333333333%;
+  width: 25%;
+  margin: 0 auto 0 33.3333333333%;
+  padding: 0 10px;
+}
 
-
-
+.text {
   font: .875rem / 1 VestiSans-Regular, sans-serif;
+  color: #fff;
   text-decoration: none;
   text-align: center;
+  display: block;
+  box-sizing: border-box;
   padding: 1.2rem 0 1rem;
   border: 1px solid #a6a6a6;
   border-radius: 4px;
+  width: 100%;
 }
-

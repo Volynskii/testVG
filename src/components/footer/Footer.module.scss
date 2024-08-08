@@ -1,20 +1,30 @@
 .holder {
-  margin: 0 0 75px 0;
-  background: white;
-
-
-
 
 }
 
 .footerChannels {
-  box-sizing: border-box;
-  padding: 0 10px;
   position: relative;
-  z-index: 2;
+
+  //box-sizing: border-box;
+  //position: relative;
+  //z-index: 2;
+  //
+  //
+  //margin: 0 8.3333333333% 2.75rem;
+  //width: 83.3333333333%;
 
 
-
+  &:after {
+    content: "";
+    box-shadow: 0 .3125rem 2.75rem rgba(0, 0, 0, .1);
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    width: calc(100% - 20px);
+    background: #fff;
+    z-index: 1;
+  }
 
 
 
@@ -29,28 +39,40 @@
   }
 
   .channelsList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    row-gap: 0px;
-    column-gap: 00px;
-    border-bottom: 1px solid #ebebeb;
-    margin: 0 -10px;
-    padding: 0;
+
+    &:first-child,
+    &:nth-child(2) {
+      margin: 0 -10px;
+      justify-content: space-between;
+      border-bottom: 1px solid #ebebeb;
+  }
+
+    &:first-child {
+      .item {
+        width: auto;
+      }
+    }
+
   }
 
   .item {
-    width: auto;
     box-sizing: border-box;
+    width: 20%;
     padding: 60px 10px;
     display: flex;
   }
 
   .link {
+    box-sizing: border-box;
     margin: auto;
     text-align: center;
-    width: 100%;
-    box-sizing: border-box;
+    width: 85%;
 
     img {
       margin: auto;
