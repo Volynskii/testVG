@@ -100,7 +100,7 @@
 }
 
 * {
-  box-sizing: border-box;
+  /*box-sizing: border-box;*/
   padding: 0;
   margin: 0;
 }
@@ -126,6 +126,11 @@ body {
   /*max-width: 1300px;*/
   /*margin: 0 auto;*/
   /*padding: 0 10px;*/
+
+
+  font-family: VestiSans-Regular, sans-serif;
+
+
 }
 
 footer {
@@ -191,11 +196,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-p {
-  font: 1rem / 1.5rem VestiSans-Light, sans-serif;
-  margin: 0 0 .75rem;
-  padding: 0 10px;
-}
+/*p {*/
+/*  font: 1rem / 1.5rem VestiSans-Light, sans-serif;*/
+/*  margin: 0 0 .75rem;*/
+/*  padding: 0 10px;*/
+/*}*/
 
 /*li:before {*/
 /*  content: "- ";*/
@@ -211,20 +216,6 @@ p {
 }
 
 .swiper-wrapper {
-  /*display: block;*/
-  /*flex-wrap: nowrap;*/
-  /*width: 100%;*/
-
-  /*position: relative;*/
-  /*width: 100%;*/
-  /*height: auto;*/
-  /*transition-property: transform;*/
-
-
-  /*position: relative;*/
-  /*width: 100%;*/
-  /*height: auto;*/
-  /*transition-property: transform;*/
   position: relative;
   width: 100%;
   height: auto;

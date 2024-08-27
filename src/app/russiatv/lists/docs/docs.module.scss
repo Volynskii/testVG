@@ -1,0 +1,66 @@
+.docs {
+  padding: 6rem 0 3rem 6rem;
+  margin: 1.5rem -10%;
+  width: 120%;
+  box-sizing: border-box;
+  position: relative;
+
+  &:before {
+    content: "";
+    box-shadow: 0 .25rem 2.75rem rgba(0, 0, 0, .25);
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 100%;
+    width: calc(100% - 20px);
+    background: #fff;
+    z-index: 1;
+  }
+}
+
+.container {
+  color: #000;
+  margin: 0 auto .5rem;
+  padding: 0 20px;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  //flex-flow: row wrap;
+
+
+}
+
+.headline {
+  color: #000;
+  z-index: 2;
+  position: relative;
+  width: 16.6666666667%;
+  padding: 0;
+  margin: 0;
+}
+
+.list {
+  color: #000;
+  margin: 0 auto .5rem;
+  padding: 0 20px;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.paragraph {
+  position: relative;
+  z-index: 2;
+  width: 41.6666666667%;
+  margin: 0 auto 1.875rem;
+  padding: 0;
+  color: #000;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.anchor {
+  color: #0602ff;
+  text-decoration: none;
+}
