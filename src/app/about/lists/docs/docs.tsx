@@ -1,7 +1,11 @@
+import { IDocument } from '@/types';
 import styles from './docs.module.scss';
 
+interface DocsListProps {
+    documents: IDocument[];
+};
 
-const DocsList = ({ documents }) => (
+const DocsList: React.FC<DocsListProps> = ({ documents }) => (
     <div className={styles.docs}>
         <div className={styles.container}>
         <h3 className={styles.headline}>Документы</h3>

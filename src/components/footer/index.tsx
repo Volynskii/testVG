@@ -1,4 +1,4 @@
-import styles from './Footer.module.scss';
+import styles from './index.module.scss';
 import Image from "next/image";
 import logo from '../../../public/images/mocks/logo-karusel.svg';
 import {firstLine, secondLine, thirdLine} from "@/mocks/footer/pictures";
@@ -8,41 +8,44 @@ const Footer = () => {
         <>
         <footer className={styles.holder}>
             <div className={styles.footerChannels}>
-            <div className={styles.channels}>
-                <div className={styles.content}>
+                <div className={styles.channels}>
+                    <div className={styles.content}>
 
-                    <ul className={styles.channelsList}>
-                        {firstLine.map((logoItem, index)=> (
-                            <li key={index} className={styles.item}>
-                                <div className={styles.link}>
-                                    <Image src={logoItem} alt={'picture'}/>
-                                </div>
-                            </li>
-                        ))}
-                    </ul>
+                        <ul className={styles.channelsList}>
+                            {firstLine.map((logoItem, index)=> (
+                                <li key={index} className={styles.item}>
+                                    <div className={styles.link}>
+                                        <Image src={logoItem} alt={'picture'}/>
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
 
-                    <ul className={styles.channelsList}>
-                        {secondLine.map((logoItem,index)=> (
-                            <li key={index} className={styles.item}>
-                                <div className={styles.link}>
-                                    <Image src={logoItem} alt={'picture'}/>
-                                </div>
-                            </li>
-                        ))}
-                    </ul>
+                        <ul className={styles.channelsList}>
+                            {secondLine.map((logoItem,index)=> (
+                                <li key={index} className={styles.item}>
+                                    <div className={styles.link}>
+                                        <Image 
+                                            src={logoItem}
+                                            alt={'picture'}
+                                        />
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
 
-                    <ul className={styles.channelsList}>
-                        {thirdLine.map((logoItem,index)=> (
-                            <li key={index} className={styles.item}>
-                                <div className={styles.link}>
-                                    <Image src={logo} alt={'picture'}/>
-                                </div>
-                            </li>
-                        ))}
-                    </ul>
+                        <ul className={styles.channelsList}>
+                            {thirdLine.map((logoItem,index)=> (
+                                <li key={index} className={styles.item}>
+                                    <div className={styles.link}>
+                                        <Image src={logo} alt={'picture'}/>
+                                    </div>
+                                </li>
+                            ))}
+                        </ul>
 
+                    </div>
                 </div>
-            </div>
             </div>
 
 

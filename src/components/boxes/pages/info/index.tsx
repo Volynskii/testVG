@@ -1,6 +1,11 @@
+import React from 'react';
 import styles from './InfoBox.module.scss';
 
-const InfoBox = ({children}) => {
+interface InfoBoxProps {
+    children?: React.ReactNode;
+};
+
+const InfoBox: React.FC<InfoBoxProps> = ({children}) => {
     return (
         <div className={styles.infoBox}>
             {children}

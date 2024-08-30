@@ -1,6 +1,12 @@
+import { ReactNode } from 'react';
 import styles from './button.module.scss'
 
-const ButtonBox = ({children}) => {
+interface MyComponentProps {
+    children: ReactNode;
+};
+
+// TODO: make it functional
+const ButtonBox: React.FC<MyComponentProps> = ({children}) => {
     return (
         <div className={styles.container}>
             {children}

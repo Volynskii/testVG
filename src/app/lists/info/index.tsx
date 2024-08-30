@@ -1,11 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import NewsInfo from "@/components/newsInfo";
 import ButtonLink from "@/components/buttons/buttonLink";
 import ButtonBox from "@/components/boxes/button";
 
-const Info = ({ data, children, href }) => {
+interface InfoProps {
+    children: ReactNode;
+    href?: string;
+    data: {
+        info: {
+            date: string;
+            headline: string;
+        }[];
+    };
+};
+
+const Info: React.FC<InfoProps> = ({ data, children, href }) => {
 
     const { info } = data;
     const NEWS_LIMIT = 2;
@@ -32,7 +43,7 @@ const Info = ({ data, children, href }) => {
                 />
             ))}
             <ButtonBox>
-            <ButtonLink text="Показать больше" href={href}/>
+                <ButtonLink text="Показать больше" href={href}/>
             </ButtonBox>
             {/*<Button text="Показать больше" onClick={handleShowMore} />*/}
         </>

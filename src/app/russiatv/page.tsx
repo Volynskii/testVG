@@ -4,21 +4,24 @@ import styles from './russiaTv.module.scss'
 
 
 const Page = async () => {
+
+    const { container, containerInner, top, title, videoContainer, textLive, info, label, name, iframe}= styles;
+
     return (
         <>
             <SectionBox>
                 <ContentBox>
-                    <div className={styles.container}>
+                    <div className={container}>
 
 
-                        <div className={styles.containerInner}>
-                            <div className={styles.top}>
-                                <div className={styles.title}>
-                                    <p className={styles.label}>телеканал</p>
-                                    <p className={styles.name}>Россия 1</p>
+                        <div className={containerInner}>
+                            <div className={top}>
+                                <div className={title}>
+                                    <p className={label}>телеканал</p>
+                                    <p className={name}>Россия 1</p>
                                 </div>
 
-                                <div className={styles.info}>
+                                <div className={info}>
                                     <ul>
                                         <li>
                                             <span>Основана</span>
@@ -40,10 +43,10 @@ const Page = async () => {
                         </div>
 
 
-                        <div className={styles.containerInner}>
-                            <div className={styles.textLive}>прямой эфир</div>
-                            <div className={styles.videoContainer}>
-                                <iframe className={styles.iframe}>
+                        <div className={containerInner}>
+                            <div className={textLive}>прямой эфир</div>
+                            <div className={videoContainer}>
+                                <iframe className={iframe}>
 
                                 </iframe>
                             </div>

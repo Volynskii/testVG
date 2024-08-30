@@ -1,4 +1,6 @@
-export const documents = [
+import { IDocument } from "@/types/mocks";
+
+export const documents: IDocument[] = [
     {
         href: 'https://cdn-st1.smotrim.ru/mh_files/004/629/Svedeniya_2023.pdf',
         text: 'Сведения о специальной оценке условий труда в головном предприятии ВГТРК (2022 год)'
