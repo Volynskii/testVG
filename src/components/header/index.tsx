@@ -7,22 +7,20 @@ import styles from './Header.module.scss';
 const Header = () => {
     return (
         <header className={styles.header}>
-        <div className={styles.wrapper}>
+            <div className={styles.wrapper}>
 
-            <ul className={styles.languageSwitcher}>
-                <li><span>RUS</span></li>
-                <li><span>ENG</span></li>
-            </ul>
+                <ul className={styles.languageSwitcher}>
+                    <li><span>RUS</span></li>
+                    <li><span>ENG</span></li>
+                </ul>
 
-            <div className={styles.navigation}>
-                <button className={styles.buttonBurger}>Меню</button>
+                <div className={styles.navigation}>
+                    <button className={styles.buttonBurger}>Меню</button>
+                </div>
+
+                <Image alt='logo' src={logo}/>
+
             </div>
-
-
-             <Image src={logo}/>
-
-
-        </div>
         </header>
     );
 };

@@ -7,18 +7,16 @@ import { documents } from "@/mocks/documentsMock";
 
 
 const Page = async () => {
-    return (
-        <>
-            <AboutBox>
-                <Content>
-                    <SectionBox>
-                        <AboutArticle/>
-                        <DocsList documents={documents}/>
-                    </SectionBox>
-                </Content>
-            </AboutBox>
-        </>
-    )
+    return <>
+        <AboutBox>
+            <Content>
+                <SectionBox>
+                    <AboutArticle/>
+                    <DocsList documents={documents}/>
+                </SectionBox>
+            </Content>
+        </AboutBox>
+    </>
 }
 
 export default Page;

@@ -21,6 +21,20 @@
  margin: auto 0;
  padding: 0 10px;
  width: 16.6666666667%;
+
+ & li {
+  position: relative;
+ }
+
+ & li::after {
+  content: "/";
+  width: 10px;
+  padding: 0 0 0 10px;
+ }
+
+ & li:nth-of-type(2)::after {
+  display: none;
+ }
 }
 
 .navigation {
@@ -37,18 +51,4 @@
  font: .625rem / 1rem VestiSans-Regular, sans-serif;
  padding: 0 0 0 1.5rem;
 
-}
-
-.languageSwitcher li {
- position: relative;
-}
-
-.languageSwitcher li::after {
- content: "/";
- width: 10px;
- padding: 0 0 0 10px;
-}
-
-.languageSwitcher li:nth-of-type(2)::after {
- display: none;
 }

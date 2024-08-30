@@ -2,7 +2,7 @@ import React from 'react';
 import ArticleHeader from "@/components/articleHeader";
 import ArticleHeadline from "@/components/ArticleHeadline";
 
-const AboutArticle = () => {
+const AboutArticle: React.FC = () => {
     return (
         <>
             <ArticleHeader text="о компании" href="/" />
@@ -35,7 +35,7 @@ const AboutArticle = () => {
                     Архив ГТРФ c 1960 года.
                 </li>
             </ul>
-            <p><strong>Общий объем оригинального контента всех ресурсов ВГТРК > 160 000 часов в год.</strong></p>
+            <p><strong>Общий объем оригинального контента всех ресурсов ВГТРК &gt; 160 000 часов в год.</strong></p>
             <ArticleHeadline text="ФИЛИАЛЬНАЯ СЕТЬ" type="mgTB" />
             <p>79 самостоятельных региональных телерадиокомпаний. Контент на 53 национальных языках интегрирован
                 в федеральное вещание телеканалов «Россия» и «Россия 24».

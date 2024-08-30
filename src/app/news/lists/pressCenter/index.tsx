@@ -2,10 +2,13 @@ import SectionBox from "@/components/boxes/section";
 import styles from './pressCenter.module.scss';
 
 const PressCenter = () => {
+
+    const {background, body} = styles;
+
     return (
        <SectionBox>
-           <div className={styles.background}/>
-           <div className={styles.body}>
+           <div className={background}/>
+           <div className={body}>
 
            <div>
                <h2>Пресс-центр ВГТРК</h2>
