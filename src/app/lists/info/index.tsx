@@ -43,7 +43,7 @@ const Info: React.FC<InfoProps> = ({ data, children, href }) => {
                 />
             ))}
             <ButtonBox>
-                <ButtonLink text="Показать больше" href={href}/>
+                <ButtonLink text="Показать больше" href={href || ''}/>
             </ButtonBox>
             {/*<Button text="Показать больше" onClick={handleShowMore} />*/}
         </>

@@ -1,7 +1,11 @@
 import React from 'react';
 import styles from './DividerBox.module.scss';
 
-const DividerBox = ({children}) => {
+interface DividerBoxProps {
+    children: React.ReactNode
+};
+
+const DividerBox: React.FC<DividerBoxProps> = ({children}) => {
     return (
         <div className={styles.holder}>
             {children}

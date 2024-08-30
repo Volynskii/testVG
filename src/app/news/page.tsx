@@ -14,12 +14,12 @@ const Page = async () => {
             <SectionBox>
                 <Info data={infoData}>
                     <Content>
-                    <ArticleHeader text="ПРЕСС-ЦЕНТР" href="/" />
+                        <ArticleHeader text="ПРЕСС-ЦЕНТР" href="/" />
                     </Content>
                 </Info>
             </SectionBox>
 
-           <PressCenter/>
+            <PressCenter/>
         </>
     )
 }
