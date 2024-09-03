@@ -1,6 +1,9 @@
 import styles from './SocialBox.module.scss';
 
-const SocialBox = ({children}) => {
+interface SocialBoxProps {
+    children: React.ReactNode;
+}
+const SocialBox: React.FC<SocialBoxProps> = ({children}) => {
     return (
         <div className={styles.socialBox}>
             {children}

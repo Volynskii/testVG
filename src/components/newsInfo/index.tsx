@@ -2,7 +2,13 @@ import React from 'react';
 import styles from './NewsInfo.module.scss';
 import Divider from "@/components/divider";
 
-const NewsInfo = ({date, headline, isLast}) => {
+interface NewsInfoProps {
+    date: string;
+    headline: string;
+    isLast: boolean;
+};
+
+const NewsInfo: React.FC<NewsInfoProps> = ({date, headline, isLast}) => {
     return (
         <>
             <div className={styles.info}>

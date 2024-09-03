@@ -18,24 +18,26 @@ export default function Home() {
             <SectionBox>
                 <MainMenu size={'BIG'} data={mainMenuBigDData}/>
 
-            {/* Разделитель */}
-            <DividerBox>
-                <Divider/>
-            </DividerBox>
+                    {/* Разделитель */}
+                    <DividerBox>
+                        <Divider/>
+                    </DividerBox>
 
-            {/* Маленькое меню вне SectionBox */}
-            <MainMenu data={mainMenuSmallDData}  size={'SMALL'}/>
+                {/* Маленькое меню вне SectionBox */}
+                <MainMenu data={mainMenuSmallDData}  size={'SMALL'}/>
             </SectionBox>
+
 
             <SectionBox>
-            <Promo/>
+                <Promo/>
             </SectionBox>
+
 
             {/* Пресс-центр с заголовком и новостями */}
             <SectionBox>
-            <Info data={infoData} href={'/news'}>
-                <InfoHeader text={infoData.title}/>
-            </Info>
+                <Info data={infoData} href={'/news'}>
+                    <InfoHeader text={infoData.title}/>
+                </Info>
             </SectionBox>
         </>
     );

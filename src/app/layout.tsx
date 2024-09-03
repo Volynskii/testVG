@@ -23,14 +23,19 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={inter.className} suppressHydrationWarning={true}>
+        
       <Background/>
+
       <Header/>
+
       <MainBox>
-      {children}
+        {children}
       </MainBox>
+
       <MainBox>
-      <Footer/>
+        <Footer/>
       </MainBox>
+
       </body>
     </html>
   );

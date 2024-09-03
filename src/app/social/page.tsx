@@ -15,39 +15,13 @@ const Page = async () => {
                             <div className={`${styles.list} ${styles.vk}`}>
                                 <p>ВКОНТАКТЕ</p>
                                 <ul>
-                                    <li>
-                                        <a href={'https://vk.com/smotrim'} target={'_blank'}>СМОТРИМ</a>
-                                    </li>
-                                    <li>
-                                        <a href={'https://vk.com/smotrim'} target={'_blank'}>СМОТРИМ</a>
-                                    </li>
-                                    <li>
-                                        <a href={'https://vk.com/smotrim'} target={'_blank'}>СМОТРИМ</a>
-                                    </li>
-                                    <li>
-                                        <a href={'https://vk.com/smotrim'} target={'_blank'}>СМОТРИМ</a>
-                                    </li>
-                                    <li>
-                                        <a href={'https://vk.com/smotrim'} target={'_blank'}>СМОТРИМ</a>
-                                    </li>
-                                    <li>
-                                        <a href={'https://vk.com/smotrim'} target={'_blank'}>СМОТРИМ</a>
-                                    </li>
-                                    <li>
-                                        <a href={'https://vk.com/smotrim'} target={'_blank'}>СМОТРИМ</a>
-                                    </li>
-                                    <li>
-                                        <a href={'https://vk.com/smotrim'} target={'_blank'}>СМОТРИМ</a>
-                                    </li>
-                                    <li>
-                                        <a href={'https://vk.com/smotrim'} target={'_blank'}>СМОТРИМ</a>
-                                    </li>
-                                    <li>
-                                        <a href={'https://vk.com/smotrim'} target={'_blank'}>СМОТРИМ</a>
-                                    </li>
-                                    <li>
-                                        <a href={'https://vk.com/smotrim'} target={'_blank'}>СМОТРИМ</a>
-                                    </li>
+                                    {
+                                        Array.from({length: 10}).map(()=> 
+                                            <li>
+                                                <a href={'https://vk.com/smotrim'} target={'_blank'}>СМОТРИМ</a>
+                                            </li>
+                                        )
+                                    }
                                 </ul>
                             </div>
                         ))}

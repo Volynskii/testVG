@@ -2,7 +2,12 @@ import React from 'react';
 import styles from './ArticleHeader.module.scss';
 import Link from "next/link";
 
-const ArticleHeader = ({text, href}) => {
+interface ArticleHeaderProps {
+    text: string;
+    href: string;
+};
+
+const ArticleHeader: React.FC<ArticleHeaderProps> = ({text, href}) => {
     return (
       <header>
           <h1 className={styles.title}>

@@ -1,7 +1,11 @@
 import styles from './MainBox.module.scss';
 
 
-const MainBox = ({children}) => {
+interface MainrBoxProps {
+    children: React.ReactNode
+};
+
+const MainBox: React.FC<MainrBoxProps> = ({children}) => {
     return (
         <>
             <main className={styles.holder}>
